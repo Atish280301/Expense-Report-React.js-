@@ -11,6 +11,7 @@ const NewExpense = (props) =>{
             ...EnteredExpenseData
         }
         console.log(ExpenseData);
+        props.TakeExpense(ExpenseData);
     }
     return(
         <div className="FormBox">
