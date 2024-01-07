@@ -1,0 +1,10 @@
+.Heading{
+    border: 5px solid white;
+    border-radius: 20px;
+    color: white;
+    background: rgb(54, 53, 58);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
