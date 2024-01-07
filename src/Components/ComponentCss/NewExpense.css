@@ -5,3 +5,21 @@
     background: rgb(54, 53, 58);
     border-radius: 20px;
 }
+.cnb{
+    display: flex;
+    justify-content: center;
+}
+.APBTN{
+    border: 1px solid purple;
+    outline: 1px solid purple;
+    background: purple;
+}
+.BTN1{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
