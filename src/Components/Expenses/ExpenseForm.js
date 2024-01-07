@@ -28,6 +28,7 @@ const ExpenseForm = (props) =>{
             ExpDate: new Date(DateDataEx[0], DateDataEx[1], DateDataEx[2])
         };
         console.log(ExpenseDataObj);
+        props.onSaveExpenseData(ExpenseDataObj);
         SetEnteredTitle('');
         SetEnteredCost('');
         SetEnteredCount('');

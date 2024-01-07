@@ -5,6 +5,13 @@ const NewExpense = (props) =>{
     const [IsEditing, SetIsEditing] = useState(false);
     const StartEditing = () => {    SetIsEditing(true);     }
     const StopEditing = () => {     SetIsEditing(false);    }
+    //Collect Data From ExpenseForm to NewExpense
+    const SaveExpenseDataHandler = (EnteredExpenseData) =>{
+        const ExpenseData = {
+            ...EnteredExpenseData
+        }
+        console.log(ExpenseData);
+    }
     return(
         <div className="FormBox">
                 <div className="cnb">
@@ -16,6 +23,7 @@ const NewExpense = (props) =>{
                 {
                     IsEditing &&
                     <ExpenseForm 
+                        onSaveExpenseData = {SaveExpenseDataHandler}
                         onCancel = {StopEditing}
                     />
                 }
