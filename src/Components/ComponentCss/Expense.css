@@ -1,0 +1,11 @@
+:root::-webkit-scrollbar{display: none;}
+.List-Box{
+    margin: 15px;
+    padding: 10px;
+    background: rgb(54, 53, 58);
+    border-radius: 20px;
+    color: white;
+    height: 190px;
+    overflow-y: scroll;
+}
+.List-Box::-webkit-scrollbar{display: none}

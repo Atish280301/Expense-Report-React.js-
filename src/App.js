@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import NewExpense from "./Components/Expenses/NewExpense";
 import './App.css';
+import Expense from './Components/Expenses/Expense';
 let ExpenseLists = [];
 function App() {
   const[expenses, SetExpense] = useState(ExpenseLists)
-
   const ReceiveExpenseHandler = expense => {
     SetExpense(PrevExpenses => {
       return[expense,  ...PrevExpenses]
@@ -17,8 +17,10 @@ function App() {
       <NewExpense 
         TakeExpense = {ReceiveExpenseHandler}
       />
+      <Expense
+        expense = {expenses}
+      />
     </div>
   );
 }
-
 export default App;

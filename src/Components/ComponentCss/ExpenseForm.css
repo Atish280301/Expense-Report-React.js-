@@ -49,3 +49,31 @@
     outline: 1px solid purple;
     background: purple;
 }
+@media screen and (max-width: 650px){
+    .IP{
+        padding-left: 5px;
+        height: 30px;
+        width: auto;
+    }
+    .part1{
+        padding: 10px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (min-width: 650px) and (max-width: 1080px){
+    .form{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .part{
+        width: auto;
+        margin: auto;
+        padding: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
