@@ -5,7 +5,10 @@ const Expense = (props) =>{
     return(
         <div className = "List-Box">
             {props.expense.map((expenseData, index) => (
-                <ExpenseItem key = {index} ExpenseData = {expenseData} />
+                <ExpenseItem 
+                    key = {index} 
+                    ExpenseData = {expenseData} 
+                />
             ))}
         </div>
     );
